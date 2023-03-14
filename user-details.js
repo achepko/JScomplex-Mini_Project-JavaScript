@@ -1,3 +1,14 @@
+let buttonPrevious = document.querySelector('.buttonPrevious');
+buttonPrevious.removeAttribute('disabled');
+buttonPrevious.addEventListener('click',function (ev) {
+    window.history.back()
+})
+let buttonNext = document.querySelector('.buttonNext');
+buttonNext.removeAttribute('disabled');
+buttonNext.addEventListener('click',function (ev) {
+    window.history.forward()
+})
+
 let url = new URL(location.href);
 let id = url.searchParams.get('id');
 
@@ -79,16 +90,16 @@ buttonShowPosts.addEventListener('click', function (e) {
     console.log(postsTitles)
     postsTitles.classList.toggle('open');})
 
-let aHome = document.createElement('a');
-buttonHome.classList.add('buttonHome');
-aHome.appendChild(buttonHome);
-document.body.appendChild(aHome);
-buttonHome.innerHTML = 'HOME PAGE'
-buttonHome.addEventListener('click',function () {
-    aHome.href = 'index.html'
-})
-
-let buttonHome = document.querySelector('.Home');
-buttonHome.addEventListener('click',function () {
-    aHome.href = 'index.html'
-})
+// let aHome = document.createElement('a');
+// buttonHome.classList.add('buttonHome');
+// aHome.appendChild(buttonHome);
+// document.body.appendChild(aHome);
+// buttonHome.innerHTML = 'HOME PAGE'
+// buttonHome.addEventListener('click',function () {
+//     aHome.href = 'index.html'
+// })
+//
+// let buttonHome = document.querySelector('.Home');
+// buttonHome.addEventListener('click',function () {
+//     aHome.href = 'index.html'
+// })

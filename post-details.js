@@ -1,3 +1,8 @@
+let buttonPrevious = document.querySelector('.buttonPrevious');
+buttonPrevious.removeAttribute('disabled');
+buttonPrevious.addEventListener('click',function (ev) {
+    window.history.back()
+})
 
 let url = new URL(location.href);
 let post = url.searchParams.get('post');

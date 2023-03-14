@@ -14,10 +14,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let button = document.createElement('button');
             let a = document.createElement('a');
             a.href = 'user-details.html?id=' + JSON.stringify(user.id)
-            a.setAttribute('target','_blank');
+            // a.setAttribute('target','_blank');
             button.innerHTML = 'User Details';
             userDiv.appendChild(a);
             a.appendChild(button);
             container.appendChild(userDiv);
         }
     })
+
