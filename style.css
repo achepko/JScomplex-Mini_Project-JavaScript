@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&display=swap');
+body{
+    background: url('images/background1.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.footer{
+    color: white;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.buttonHome{
+    /*background: none;*/
+    /*border: none;*/
+    /*color: white;*/
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 50px;
+    column-gap: 50px;
+    padding-top: 50px;
+}
+.userBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+
+    row-gap: 20px;
+    border: 1px cornflowerblue solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.postsTitles {
+    display: none;
+}
+
+.postsTitles.open {
+    display: block;
+    transition: all 1s ease;
+}
+.userInfo{
+    margin-top: 50px;
+}
