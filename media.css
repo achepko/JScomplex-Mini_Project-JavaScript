@@ -1,0 +1,54 @@
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    #container{
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .userBlock{
+        margin-top: 30px;
+        width: 80%;
+        font-size: 15px;
+    }
+    .userName{
+        margin-top: 15px;
+    }
+
+    .userInfo{
+        margin-left: 20px;
+        width: 85%;
+    }
+    .userPosts{
+        margin-left: 0px;
+    }
+    button.showPosts{
+        font-size: 20px;
+    }
+    .postsTitles{
+        padding: 20px;
+    }
+    button.postDetails{
+        width: 50%;
+    }
+    .postInfo,.postComments{
+        margin-left: 20px;
+        /*box-sizing: border-box;*/
+        width: 300px;
+    }
+    .postInfo{
+        width: 300px;
+        /*margin-right: 100px;*/
+        /*padding-right: 100px;*/
+    }
+    .comment{
+        /*width: 100%;*/
+        /*box-sizing: border-box;*/
+
+    }
+}

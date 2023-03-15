@@ -9,10 +9,6 @@ let post = url.searchParams.get('post');
 
 fetch('https://jsonplaceholder.typicode.com/posts/' + post)
     .then(value => value.json())
-    .then(postsAll => console.log(postsAll))
-
-fetch('https://jsonplaceholder.typicode.com/posts/' + post)
-    .then(value => value.json())
     .then(post => {
         let title = document.createElement('h1');
         title.innerHTML = 'Post Info'
