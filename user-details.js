@@ -60,6 +60,7 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id)
 
 let buttonShowPosts = document.createElement('button');
 buttonShowPosts.innerHTML = 'SHOW/HIDE ALL POSTS'
+buttonShowPosts.classList.add('showPosts')
 let userPosts = document.querySelector('.userPosts');
 userPosts.appendChild(buttonShowPosts);
 
@@ -79,8 +80,9 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id + '/posts')
             let a = document.createElement('a');
             let buttonPostDetails = document.createElement('button');
             buttonPostDetails.innerHTML = 'READ MORE'
+            buttonPostDetails.classList.add('postDetails')
             a.appendChild(buttonPostDetails);
-            postsTitles.appendChild(a);
+            postTitle.appendChild(a);
             a.href = 'post-details.html?id=' + id + '&post=' + JSON.stringify(posts[i].id)
         }
     })
@@ -90,16 +92,3 @@ buttonShowPosts.addEventListener('click', function (e) {
     console.log(postsTitles)
     postsTitles.classList.toggle('open');})
 
-// let aHome = document.createElement('a');
-// buttonHome.classList.add('buttonHome');
-// aHome.appendChild(buttonHome);
-// document.body.appendChild(aHome);
-// buttonHome.innerHTML = 'HOME PAGE'
-// buttonHome.addEventListener('click',function () {
-//     aHome.href = 'index.html'
-// })
-//
-// let buttonHome = document.querySelector('.Home');
-// buttonHome.addEventListener('click',function () {
-//     aHome.href = 'index.html'
-// })
