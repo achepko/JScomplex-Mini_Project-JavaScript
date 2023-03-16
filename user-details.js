@@ -89,6 +89,6 @@ fetch('https://jsonplaceholder.typicode.com/users/' + id + '/posts')
 
 buttonShowPosts.addEventListener('click', function (e) {
     let postsTitles = document.querySelector('.postsTitles');
-    console.log(postsTitles)
-    postsTitles.classList.toggle('open');})
+    postsTitles.classList.toggle('open');
+})
 

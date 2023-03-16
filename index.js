@@ -24,6 +24,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             a.appendChild(button);
             container.appendChild(userDiv);
         }
+
     })
 
 setTimeout(function () {
@@ -42,6 +43,7 @@ setTimeout(function () {
     let video = document.createElement('video');
     video.innerHTML = "<source src=\"images/videoplayback.mp4\" type=\"video/webm\">"
     video.setAttribute('autoplay','autoplay')
+    video.setAttribute('muted','muted')
 
     ad.append(buttonCloseAd,video);
 

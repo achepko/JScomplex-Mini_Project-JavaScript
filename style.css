@@ -87,27 +87,31 @@ button.showPosts{
     display: none;
     text-align: center;
 }
+.postsTitles.open{
+    display: flex;
+    transition-duration:500ms;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    justify-content: center;
+}
+button.postDetails{
+    width: 35%;
+    border-radius: 10px;
+    background: white;
+    font-weight: 600;
+    font-size: 15px;
+
+}
 .postTitle{
-    margin-bottom: 20px;
-    margin-top: 20px;
+    width: 20%;
+    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     border: white solid 1px;
     border-radius: 10px;
     padding:10px;
     row-gap: 10px;
-}
-.postsTitles.open {
-    display: block;
-    transition: all 6000ms ease;
-}
-button.postDetails{
-    width: 25%;
-    border-radius: 10px;
-    background: white;
-    font-weight: 600;
-    font-size: 15px;
-
 }
 .userInfo,.postInfo{
     display: flex;
@@ -122,7 +126,7 @@ button.postDetails{
 .postComments{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     padding-left: 20px;
     margin-left: 50px;
     margin-top: 50px;
@@ -130,21 +134,39 @@ button.postDetails{
     border-left: white 2px solid;
     margin-bottom: 100px;
 }
-.comment{
+.allComments{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 20px;
     column-gap: 20px;
+    justify-content: center;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    column-gap: 10px;
+    width: 20%;
     border: white 2px solid;
     border-radius: 10px;
     padding: 10px;
 }
+.commentInfo2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
 .comment img{
     border: red 2px solid;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 7px 7px 7px 7px;
 }
 .ad{
     width: 50%;
-    height: 500px;
     background: cornflowerblue;
     position: absolute;
     top: 25vh;
