@@ -41,10 +41,9 @@ setTimeout(function () {
     buttonCloseAd.appendChild(i);
     let video = document.createElement('video');
     video.innerHTML = "<source src=\"images/videoplayback.mp4\" type=\"video/webm\">"
-    // video.setAttribute('autoplay','autoplay')
+    video.setAttribute('autoplay','autoplay')
 
     ad.append(buttonCloseAd,video);
-    video.play();
 
 },1000);
 
