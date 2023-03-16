@@ -40,7 +40,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/' + post + '/comments')
             let commentInfo = document.createElement('div');
             commentInfo.classList.add('commentInfo')
             let img = document.createElement('img');
-            img.src = "/images/avatar2.png";
+            img.src = "/images/avatarComment.png";
             let commentId = document.createElement('div');
             let commentName = document.createElement('div');
             let commentEmail = document.createElement('div');

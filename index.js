@@ -29,22 +29,22 @@ fetch('https://jsonplaceholder.typicode.com/users')
 setTimeout(function () {
 
     let ad = document.createElement('div');
-    // let container = document.querySelector('#container');
     document.body.appendChild(ad)
     ad.classList.add('ad');
-    ad.innerHTML = 'REKLAMA'
     let buttonCloseAd = document.createElement('button');
+    buttonCloseAd.classList.add('closeAd');
     buttonCloseAd.addEventListener('click',function (ev) {
-        ad.setAttribute('class','close')
+        ad.remove()
     })
     let i = document.createElement('i');
     i.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     buttonCloseAd.appendChild(i);
     let video = document.createElement('video');
-    video.setAttribute('autoplay','autoplay')
     video.innerHTML = "<source src=\"images/videoplayback.mp4\" type=\"video/webm\">"
+    // video.setAttribute('autoplay','autoplay')
 
     ad.append(buttonCloseAd,video);
+    video.play();
 
 },1000);
 

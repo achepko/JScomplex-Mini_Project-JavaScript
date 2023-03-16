@@ -141,10 +141,8 @@ button.postDetails{
 }
 .comment img{
     border: red 2px solid;
-    /*height: 80px;*/
 }
 .ad{
-
     width: 50%;
     height: 500px;
     background: cornflowerblue;
@@ -152,6 +150,15 @@ button.postDetails{
     top: 25vh;
     left: 25vw;
     box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.75);
-    /*position: center;*/
-
+    z-index: 98;
+    box-sizing: border-box;
+}
+button.closeAd{
+    position: absolute;
+    z-index: 100;
+}
+video{
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*z-index: 99;*/
 }
