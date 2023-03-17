@@ -143,12 +143,10 @@ button.postDetails{
     width: 100%;
     row-gap: 20px;
     column-gap: 20px;
-    /*justify-content: center;*/
 }
-.comment{
+.comment, .newComment,.oldComment{
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     column-gap: 10px;
     width: 20%;
     border: white 2px solid;
@@ -168,6 +166,13 @@ button.postDetails{
     float: left;
     margin: 7px 7px 7px 7px;
 }
+.newComment img,.oldComment img{
+    border: greenyellow 2px solid;
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 7px 7px 7px 7px;
+}
 .ad{
     width: 50%;
     height: 50%;
@@ -177,7 +182,6 @@ button.postDetails{
     right: 25%;
     left:25%;
     z-index: 98;
-    /*box-sizing: border-box;*/
 }
 button.closeAd{
     position: absolute;
@@ -192,4 +196,10 @@ button.closeAd{
 video{
     width: 100%;
     box-shadow: 100px 100px 100px 100px rgba(0, 0, 0, 0.75);
+}
+
+.addComment{
+    background: silver;
+    height: 200px;
+    width: 100%;
 }
