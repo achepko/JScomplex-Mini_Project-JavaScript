@@ -1,71 +1,90 @@
 @media screen and (max-width: 1000px) {
-    body{
+    body {
         margin: 0;
         padding: 0 0 100px 0;
         /*padding-bottom: 50px;*/
     }
-    #container{
+
+    #container {
         padding: 10px;
         box-sizing: border-box;
         width: 100vw;
         display: flex;
         flex-direction: column;
-        row-gap:10px;
+        row-gap: 10px;
     }
-    .userBlock{
+
+    .userBlock {
         margin-top: 30px;
         width: 80%;
         font-size: 15px;
     }
-    .userName{
+
+    .userName {
         margin-top: 15px;
     }
 
-    .userInfo{
+    .userInfo {
         margin-left: 20px;
         width: 85%;
     }
-    .userPosts{
+
+    .userPosts {
         margin-left: 0;
     }
-    button.showPosts{
+
+    button.showPosts {
         font-size: 20px;
     }
-    .postsTitles{
+
+    .postsTitles {
         padding: 20px;
         flex-wrap: nowrap;
         flex-direction: column;
     }
-    button.postDetails{
+
+    button.postDetails {
         width: 50%;
     }
-    .postTitle{
+
+    .postTitle {
         width: 100%;
         box-sizing: border-box;
     }
-    .postInfo,.postComments{
+
+    .postInfo, .postComments, .addComment {
         margin-left: 20px;
         width: 300px;
     }
-    .postComments{
+
+    .postComments, .addComment {
         flex-direction: column;
         flex-wrap: nowrap;
     }
-    .postInfo{
+
+    .postInfo {
         width: 300px;
     }
-    .comment{
+
+    .comment, .oldComment, .newComment {
         width: 100%;
     }
-    .ad{
+
+    .ad {
         width: 90%;
         right: 5%;
-        left:5%;
+        left: 5%;
         font-size: 10px;
         height: 100px;
     }
-    video{
+
+    video {
         max-width: 100%;
 
+    }
+
+    .addComment input {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
