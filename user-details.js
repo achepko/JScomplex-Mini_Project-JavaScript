@@ -92,3 +92,26 @@ buttonShowPosts.addEventListener('click', function (e) {
     postsTitles.classList.toggle('open');
 })
 
+setTimeout(function () {
+    let ad = document.createElement('div');
+    document.body.appendChild(ad)
+    ad.classList.add('ad');
+    let buttonCloseAd = document.createElement('button');
+    buttonCloseAd.classList.add('closeAd');
+    buttonCloseAd.addEventListener('click',function (ev) {
+        ad.remove()
+    });
+    let reklama = document.createElement('h2');
+    reklama.innerHTML = 'REKLAMA REKLAMA REKLAMA '
+    let i = document.createElement('i');
+    i.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    buttonCloseAd.appendChild(i);
+    let video = document.createElement('video');
+    video.innerHTML = "<source src=\"images/videoplayback.mp4\" type=\"video/webm\">"
+    video.setAttribute('autoplay','autoplay')
+    video.setAttribute('muted','muted')
+
+    ad.append(buttonCloseAd,reklama,video);
+
+},1000);
+
