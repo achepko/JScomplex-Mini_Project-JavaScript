@@ -143,7 +143,7 @@ button.postDetails{
     width: 100%;
     row-gap: 20px;
     column-gap: 20px;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .comment{
     display: flex;
@@ -183,8 +183,12 @@ button.closeAd{
     position: absolute;
     z-index: 100;
 }
+.ad h2{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+    margin-bottom: 0;
+}
 video{
     width: 100%;
-    /*position: absolute;*/
-    /*z-index: 99;*/
 }

@@ -36,7 +36,9 @@ setTimeout(function () {
     buttonCloseAd.classList.add('closeAd');
     buttonCloseAd.addEventListener('click',function (ev) {
         ad.remove()
-    })
+    });
+    let reklama = document.createElement('h2');
+    reklama.innerHTML = 'REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA '
     let i = document.createElement('i');
     i.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     buttonCloseAd.appendChild(i);
@@ -45,7 +47,7 @@ setTimeout(function () {
     video.setAttribute('autoplay','autoplay')
     video.setAttribute('muted','muted')
 
-    ad.append(buttonCloseAd,video);
+    ad.append(buttonCloseAd,reklama,video);
 
 },1000);
 
