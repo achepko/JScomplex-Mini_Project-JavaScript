@@ -33,23 +33,39 @@
     }
     .postsTitles{
         padding: 20px;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
     button.postDetails{
         width: 50%;
     }
+    .postTitle{
+        width: 100%;
+        box-sizing: border-box;
+    }
     .postInfo,.postComments{
         margin-left: 20px;
-        /*box-sizing: border-box;*/
         width: 300px;
+    }
+    .postComments{
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .postInfo{
         width: 300px;
-        /*margin-right: 100px;*/
-        /*padding-right: 100px;*/
     }
     .comment{
-        /*width: 100%;*/
-        /*box-sizing: border-box;*/
+        width: 100%;
+    }
+    .ad{
+        width: 90%;
+        right: 5%;
+        left:5%;
+        font-size: 10px;
+        height: 100px;
+    }
+    video{
+        max-width: 100%;
 
     }
 }

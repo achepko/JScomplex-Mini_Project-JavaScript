@@ -38,7 +38,7 @@ setTimeout(function () {
         ad.remove()
     });
     let reklama = document.createElement('h2');
-    reklama.innerHTML = 'REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA '
+    reklama.innerHTML = 'REKLAMA REKLAMA REKLAMA '
     let i = document.createElement('i');
     i.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     buttonCloseAd.appendChild(i);
