@@ -217,14 +217,14 @@ video{
     border-radius: 10px;
 }
 .addComment input.inputComment{
-    width: 100%;
+    width: 92%;
     height: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .addComment button{
     font-size: 15px;
-    width: 100%;
+    width: 93%;
     height: 35px;
     background: black;
     color: white;
